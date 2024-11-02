@@ -1,0 +1,7 @@
+{% for rec in recs %}
+    record: 
+    <a href="{% url 'detail_rec' rec.id %}">
+        {{rec.name}} {{rec.id}}
+    </a>
+    <br/>
+{% endfor %}
